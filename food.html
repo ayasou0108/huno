@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>道の駅ゆめランド布野</title>
+    <meta
+      name="description"
+      content="広島県三次市の道の駅ゆめランド布野は、地元グルメや特産品、自然体験が楽しめる立ち寄りスポット。ドライブや観光の休憩にぴったりな道の駅です。"
+    />
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/destyle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- js -->
+    <script src="assets/js/main.js" defer></script>
+  </head>
+
+  <body id="food">
+    <h1 class="visually-hidden">
+      お食事・アイス｜道の駅ゆめランド布野（広島県三次市）の施設・サービス案内
+    </h1>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list nav__list--left">
+          <li class="nav__item">
+            <a href="/">トップページ</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#news">お知らせ</a>
+          </li>
+          <li class="nav__item">
+            <a href="food.html">お食事・<br class="br-sp" />アイス</a>
+          </li>
+        </ul>
+
+        <div class="site-logo">
+          <a href="/" aria-label="ホームへ戻る">
+            <img
+              src="assets/images/logo.png"
+              alt="道の駅ゆめランド布野のロゴ"
+              width="176"
+              height="176"
+            />
+          </a>
+        </div>
+
+        <ul class="nav__list nav__list--right">
+          <li class="nav__item">
+            <a href="market.html">市場・<br class="br-sp" />お土産</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#access">アクセス</a>
+          </li>
+          <li class="nav__item">
+            <a href="sightseeing.html">周辺観光</a>
+          </li>
+          <li class="nav__item nav__sns">
+            <a
+              href="https://www.instagram.com/michinoeki_funo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <div class="hamburger__lines">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="hamburger__text">メニュー</span>
+      </button>
+    </header>
+    <!-- モバイルナビ -->
+    <div class="mobile__nav" id="mobileNav">
+      <ul class="mobile__nav-list">
+        <li class="mobile__nav-item">
+          <a href="/" class="mobile__nav-link">トップページ</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="index.html#news" class="mobile__nav-link">お知らせ</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="food.html" class="mobile__nav-link">お食事・アイス</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="market.html" class="mobile__nav-link">市場・お土産</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="index.html#access" class="mobile__nav-link">アクセス</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="sightseeing.html" class="mobile__nav-link">周辺観光</a>
+        </li>
+      </ul>
+
+      <div class="mobile__nav-info">
+        <ul>
+          <li class="nav__sns">
+            <a
+              href="https://www.instagram.com/..."
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="info__item">
+            <div class="info__inner">
+              <p class="info__label">営業時間</p>
+              <div class="info__content">
+                <div class="info__schedule-row">
+                  <div class="info__schedule-name">
+                    ・ふるさと惣菜バイキング
+                  </div>
+                  <div class="info__schedule-time">
+                    11:00～15:00 ※土日祝限定
+                  </div>
+                </div>
+                <div class="info__schedule-row">
+                  <div class="info__schedule-name">
+                    ・まるごと布野のアイス屋さん
+                  </div>
+                  <div class="info__schedule-time">
+                    10:00～16:00<span class="info__schedule-sub">
+                      ※土日祝は17:00まで</span
+                    >
+                  </div>
+                </div>
+                <div class="info__schedule-row">
+                  <div class="info__schedule-name">
+                    ・布野ふれあい市場 / <br class="br-sp" />三次のお土産屋さん
+                  </div>
+                  <div class="info__schedule-time">9:00～16:00</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile__overlay" id="mobileOverlay"></div>
+
+    <main>
+      <section class="lower-mv">
+        <div class="lower-mv__background">
+          <h2>お食事・アイス</h2>
+          <picture>
+            <source
+              srcset="assets/images/lower-mv-sp.png"
+              media="(max-width: 768px)"
+            />
+            <img
+              src="assets/images/lower-mv.png"
+              alt="施設・サービス詳細"
+              class="lower-mv__bg"
+            />
+          </picture>
+        </div>
+
+        <div class="lower-mv__nav">
+          <div class="lower-mv__nav-group">
+            <div class="lower-mv__category">
+              <img
+                src="assets/images/icon-food.svg"
+                alt=""
+                class="lower-mv__icon"
+              />
+              <span class="lower-mv__label">お食事</span>
+            </div>
+            <a href="#viking" class="lower-mv__btn">
+              ふるさと惣菜バイキング・<br class="br-sp" />ランチ食堂
+              <span class="lower-mv__arrow"></span>
+            </a>
+          </div>
+
+          <div class="lower-mv__nav-group">
+            <div class="lower-mv__category">
+              <img
+                src="assets/images/icon-ice.svg"
+                alt=""
+                class="lower-mv__icon"
+              />
+              <span class="lower-mv__label">アイス</span>
+            </div>
+            <a href="#ice" class="lower-mv__btn">
+              まるごと布野の<br class="br-sp" />アイス屋さん
+              <span class="lower-mv__arrow"></span>
+            </a>
+          </div>
+
+          <div class="lower-mv__nav-group">
+            <div class="lower-mv__category">
+              <img
+                src="assets/images/icon-reserve.svg"
+                alt=""
+                class="lower-mv__icon reserve"
+              />
+              <span class="lower-mv__label">予約サービス</span>
+            </div>
+            <a href="#reserve" class="lower-mv__btn">
+              仕出し・<br class="br-sp" />宴会場貸し出し
+              <span class="lower-mv__arrow"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="facility">
+        <div class="facility__header">
+          <div class="facility__main-icon">
+            <img src="assets/images/icon-food.svg" alt="" />
+          </div>
+          <h2>お食事</h2>
+        </div>
+        <div class="facility__inner viking-section" id="viking">
+          <div class="facility__title">
+            <h3>ふるさと惣菜バイキング</h3>
+            <span class="facility__title-tag">土日祝</span>
+          </div>
+
+          <p class="facility__title-desc">
+            地元・三次市布野町や作木町で生産された旬の新鮮野菜をふれあい市場から仕入れ、<br />
+            素材の味を活かした健康志向のバイキングです。<br />豊富な種類の惣菜が並び、旬の恵みとどこか懐かしい郷土の味をバイキング形式でお楽しみいただけます。
+          </p>
+          <div class="viking-section__main-img">
+            <img src="assets/images/food-01.png" alt="バイキングの様子" />
+          </div>
+          <div class="viking-section__flex">
+            <div class="viking-section__info-side">
+              <ul class="viking-section__info-list">
+                <li class="info__item">
+                  <div class="info__inner">
+                    <p class="info__label">
+                      <img
+                        src="assets/images/icon-clock.svg"
+                        alt=""
+                        class="info__icon"
+                      />営業時間
+                    </p>
+                    <div class="info__content">
+                      <p class="info__time">
+                        11:00～15:00 <span>土日祝限定 / 60分時間制限</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="info__item">
+                  <div class="info__inner">
+                    <p class="info__label">
+                      <img
+                        src="assets/images/icon-wallet.svg"
+                        alt=""
+                        class="info__icon"
+                      />料金（税込）
+                    </p>
+                    <div class="info__content">
+                      <div class="price-details">
+                        <div class="price-group">
+                          <p class="price-group__title">バイキング</p>
+                          <p class="price-group__text">
+                            ・大人（中学生以上） 1,760円
+                          </p>
+                          <p class="price-group__text">・小学生 990円</p>
+                          <p class="price-group__text">
+                            ・4歳以上小学生未満 715円
+                          </p>
+                          <p class="price-group__text">・3歳以下 無料</p>
+                        </div>
+                        <div class="price-group">
+                          <p class="price-group__title">ドリンクバー</p>
+                          <p class="price-group__text">
+                            ・大人（中学生以上） 330円
+                          </p>
+                          <p class="price-group__text">・小人 無料</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="viking-section__takeout-side">
+              <div class="takeout-card">
+                <div class="takeout-card__body">
+                  <h3 class="takeout-card__title">お持ち帰りできます</h3>
+                  <p class="takeout-card__text">
+                    お持ち帰り専用の「おみやげ惣菜バイキングBOX」をレストラン売店で発売しています。<br />
+                    ご家庭の食事のおかずに、外で食べるランチ弁当に最適です。<br />
+                    専用の箱を1,210円（税込）で購入後、箱を組み立て、お好きなバイキング料理を詰めてください。
+                  </p>
+                </div>
+                <div class="takeout-card__img-wrapper">
+                  <img
+                    src="assets/images/takeout.png"
+                    alt="お土産惣菜バイキングBOX"
+                    class="takeout-card__img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="food-intro">
+            <div class="food-intro__inner">
+              <div class="food-intro__content">
+                <div class="food-intro__text-area">
+                  <p class="intro-text">
+                    料理長がその日その時の食材を見ながらアレンジする、<br
+                      class="food-br"
+                    />
+                    手づくりのぬくもりあふれるバイキング。<br />
+                    並ぶのは、どこか懐かしい“おばあちゃんの味”です。<br />
+                    ばら寿司や季節の漬物、天ぷらやお鍋、お惣菜、カレーなど品数も豊富で、旬の食材に合わせてメニューも変わります。<br />
+                    地元野菜の旨みをそのまま味わえる、世代を問わず楽しめるやさしい手づくり料理を、どうぞゆっくりお楽しみください。
+                  </p>
+                </div>
+              </div>
+              <div class="food-intro__veggie-decor">
+                <img
+                  src="assets/images/vegetable-images.png"
+                  alt=""
+                  class="veggie-decor__img"
+                />
+              </div>
+              <div class="food-intro__photo">
+                <img
+                  src="assets/images/Viking-images.png"
+                  alt="バイキング料理のイメージ"
+                  class="food-intro__img"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="facility__inner lunch-section">
+          <div class="facility__title">
+            <h3>ランチ食堂　布野のセットさん</h3>
+            <span class="facility__title-tag">平日</span>
+          </div>
+          <div class="lunch-section__inner">
+            <div class="lunch-section__left">
+              <li class="info__item">
+                <div class="info__inner">
+                  <p class="info__label">
+                    <img
+                      src="assets/images/icon-clock.svg"
+                      alt=""
+                      class="info__icon"
+                    />営業時間
+                  </p>
+                  <div class="info__content">
+                    <p class="info__time">平日　11:00〜15:00</p>
+                  </div>
+                </div>
+              </li>
+
+              <div class="menu-poster">
+                <img
+                  src="assets/images/lunch-1.png"
+                  alt="ランチ食堂のメニュー"
+                />
+              </div>
+            </div>
+
+            <div class="lunch-section__right">
+              <p class="lunch-section__desc">
+                ゆめランド布野では、平日は「ランチ食堂」として営業しています。<br />
+                うどんやカツ丼、ラーメン、唐揚げセットなど、ほっとする温かい定食メニューをご用意。お一人様でもご家族でも立ち寄りやすい、気軽に楽しめるメニューが魅力です。
+              </p>
+
+              <div class="lunch-section__gallery">
+                <div class="lunch-section__gallery-item">
+                  <img src="assets/images/lunch-2.png" alt="カレーライス" />
+                </div>
+                <div class="lunch-section__gallery-item">
+                  <img src="assets/images/lunch-3.png" alt="カツ丼" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ice" class="facility ice-section">
+        <div class="facility__header">
+          <div class="facility__main-icon">
+            <img src="assets/images/icon-ice.svg" alt="" />
+          </div>
+          <h2>アイス</h2>
+        </div>
+
+        <div class="facility__inner ice-section__inner">
+          <div class="facility__title ice-cup-wrapper">
+            <h3>まるごと布野のアイス屋さん</h3>
+            <img
+              src="assets/images/ice-cup.png"
+              alt="アイスカップのアイコン"
+              class="ice-cup"
+            />
+          </div>
+
+          <p class="facility__title-desc">
+            まるごと布野のアイス屋さんでは「布野だからできるアイス」の味を提供したいとこだわって製造しています。<br />
+            生乳は三次の大地で育った牛から搾ったものを使用し、素材の野菜や果物は布野町・作木町で生産された新鮮な素材を使用しています。<br />
+            定番フレーバーに加え、季節限定や変わり種フレーバーもあります。
+          </p>
+          <div class="ice-section__main-img">
+            <img src="assets/images/ice-1.png" alt="アイス屋さんの外観" />
+            <img src="assets/images/ice-2.png" alt="アイスボックス" />
+          </div>
+
+          <div class="ice-section__flex">
+            <div class="ice-section__info-side">
+              <ul class="ice-section__info-list">
+                <li class="info__item">
+                  <div class="info__inner">
+                    <p class="info__label">
+                      <img
+                        src="assets/images/icon-clock.svg"
+                        alt=""
+                        class="info__icon"
+                      />営業時間
+                    </p>
+                    <div class="info__content">
+                      <p class="info__time">
+                        10:00～16:00 <span>土日祝は17：00まで</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="info__item">
+                  <div class="info__inner">
+                    <p class="info__label">
+                      <img
+                        src="assets/images/icon-wallet.svg"
+                        alt=""
+                        class="info__icon"
+                      />料金（税込）
+                    </p>
+                    <div class="info__content">
+                      <div class="price-details">
+                        <p>
+                          Ｓコーン・カップ 各400円<br />Wコーン・カップ 各650円
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ice-section__img">
+              <img src="assets/images/ice-3.png" alt="" />
+              <img src="assets/images/ice-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="facility__inner menu-section">
+          <div class="facility__title">
+            <h3>メニュー</h3>
+          </div>
+          <p class="facility__title-desc">
+            年間を通じて、色々な味が楽しめます。器は「カップ」か「コーン」から、<br />
+            アイスはシングル（1種類）かダブル（2種類）から選べます。<br />
+            <span class="ice-desc"
+              >※旬の素材を使用しているため、メニュー内容は時期により変更となる場合があります。掲載されていないフレーバーが店頭に並ぶこともありますので、ぜひその時々の味をお楽しみください。</span
+            >
+          </p>
+
+          <div class="menu-section__regular">
+            <h4 class="menu-section__sub-title">
+              定番商品<span>季節を問わず、1年を通して販売しています</span>
+            </h4>
+            <ul class="ice-list">
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-1.png" alt="" />
+                </div>
+                <p class="ice-list__name">ミルク</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-2.png" alt="" />
+                </div>
+                <p class="ice-list__name">バニラ</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-3.png" alt="" />
+                </div>
+                <p class="ice-list__name">ごま</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-4.png" alt="" />
+                </div>
+                <p class="ice-list__name">ゆず茶</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-5.png" alt="" />
+                </div>
+                <p class="ice-list__name">抹茶</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-6.png" alt="" />
+                </div>
+                <p class="ice-list__name">チョコ<br class="ice-br" />チップ</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-7.png" alt="" />
+                </div>
+                <p class="ice-list__name">
+                  アーモンド<br class="ice-br" />プラリネ
+                </p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-8.png" alt="" />
+                </div>
+                <p class="ice-list__name">ラムレーズン</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-section__seasonal">
+            <h4 class="menu-section__sub-title">
+              季節限定<span>素材が一番おいしい旬の時期のみ販売しています</span>
+            </h4>
+            <ul class="ice-list">
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-9.png" alt="" />
+                </div>
+                <p class="ice-list__name">さくら</p>
+                <p class="ice-list__period">4月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-10.png" alt="" />
+                </div>
+                <p class="ice-list__name">いちご</p>
+                <p class="ice-list__period">3〜5月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-11.png" alt="" />
+                </div>
+                <p class="ice-list__name">よもぎ</p>
+                <p class="ice-list__period">4〜5月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-12.png" alt="" />
+                </div>
+                <p class="ice-list__name">葉わさび</p>
+                <p class="ice-list__period">5月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-13.png" alt="" />
+                </div>
+                <p class="ice-list__name">そら豆</p>
+                <p class="ice-list__period">6月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-14.png" alt="" />
+                </div>
+                <p class="ice-list__name">トマト<br />シャーベット</p>
+                <p class="ice-list__period">6〜7月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-15.png" alt="" />
+                </div>
+                <p class="ice-list__name">アスパラ<br />ほうれん草</p>
+                <p class="ice-list__period">6〜8月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-16.png" alt="" />
+                </div>
+                <p class="ice-list__name">青梅</p>
+                <p class="ice-list__period">7〜9月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-17.png" alt="" />
+                </div>
+                <p class="ice-list__name">ミョウガ<br />シャーベット</p>
+                <p class="ice-list__period">7〜9月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-18.png" alt="" />
+                </div>
+                <p class="ice-list__name">スイカ<br />シャーベット</p>
+                <p class="ice-list__period">8月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-19.png" alt="" />
+                </div>
+                <p class="ice-list__name">なし<br />シャーベット</p>
+                <p class="ice-list__period">8〜9月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-20.png" alt="" />
+                </div>
+                <p class="ice-list__name">くり</p>
+                <p class="ice-list__period">9〜10月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-21.png" alt="" />
+                </div>
+                <p class="ice-list__name">いちじく</p>
+                <p class="ice-list__period">10〜11月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-22.png" alt="" />
+                </div>
+                <p class="ice-list__name">リンゴ<br />シャーベット</p>
+                <p class="ice-list__period">10〜11月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-23.png" alt="" />
+                </div>
+                <p class="ice-list__name">枝豆</p>
+                <p class="ice-list__period">10〜11月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-24.png" alt="" />
+                </div>
+                <p class="ice-list__name">小豆</p>
+                <p class="ice-list__period">10〜11月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-25.png" alt="" />
+                </div>
+                <p class="ice-list__name">古代米</p>
+                <p class="ice-list__period">10〜3月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-26.png" alt="" />
+                </div>
+                <p class="ice-list__name">やきいも</p>
+                <p class="ice-list__period">12〜3月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-27.png" alt="" />
+                </div>
+                <p class="ice-list__name">トウガラシ</p>
+                <p class="ice-list__period">1〜3月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-28.png" alt="" />
+                </div>
+                <p class="ice-list__name">ゆず<br />シャーベット</p>
+                <p class="ice-list__period">12〜1月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-29.png" alt="" />
+                </div>
+                <p class="ice-list__name">キウイ</p>
+                <p class="ice-list__period">1〜2月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-30.png" alt="" />
+                </div>
+                <p class="ice-list__name">甘酢しょうが</p>
+                <p class="ice-list__period">1〜3月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-31.png" alt="" />
+                </div>
+                <p class="ice-list__name">豆乳</p>
+                <p class="ice-list__period">1〜3月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-32.png" alt="" />
+                </div>
+                <p class="ice-list__name">ふきのとう</p>
+                <p class="ice-list__period">2〜3月頃</p>
+              </li>
+              <li class="ice-list__item">
+                <div class="ice-list__img">
+                  <img src="assets/images/menu-33.png" alt="" />
+                </div>
+                <p class="ice-list__name">酒かす</p>
+                <p class="ice-list__period">通年</p>
+              </li>
+            </ul>
+            <p class="ice-menu__note">
+              ※季節限定商品の記載月間は、気象・収穫などの条件で変わりますので、一応の目安です。写真はイメージです。
+            </p>
+          </div>
+
+          <div class="ice-section-online__flex">
+            <div class="online-shop__inner info__item">
+              <div class="info__inner">
+                <h2>オンライン通販</h2>
+                <p class="online-shop__text">
+                  道の駅ゆめランド布野の商品を<br
+                    class="online-br"
+                  />ネットで購入できます。
+                </p>
+
+                <div class="online-shop__btn-group">
+                  <a
+                    href="https://example.com/shop1"
+                    class="online-shop__btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ゆめランド通販サイト
+                  </a>
+                  <!-- <a
+                    href="https://example.com/shop2"
+                    class="online-shop__btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    道の駅の逸品！<br />さとやまHIROSHIMA商店
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="ice-section__img ice-online">
+              <img src="assets/images/ice-online-1.png" alt="" />
+              <img src="assets/images/ice-online-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reserve" class="facility reserve-section">
+        <div class="facility__header">
+          <div class="facility__main-icon">
+            <img src="assets/images/icon-reserve.svg" alt="" />
+          </div>
+          <h2>予約サービス</h2>
+        </div>
+
+        <div class="facility__inner product">
+          <div class="facility__title">
+            <h3>仕出し</h3>
+          </div>
+
+          <p class="facility__title-desc">
+            各種仕出し料理を承っております。<br />お祝い・ご法要をはじめ、ご家庭でのお集まり、会合、パーティ、お花見など、<br />さまざまなシーンに合わせてご利用いただけます。用途やご要望に応じて、内容のアレンジも可能です。<br />茶碗蒸しや吸い物の仕出し対応も行っております。お料理内容は季節により変更となります。
+          </p>
+
+          <div class="product-menu">
+            <div class="product-item">
+              <div class="product-img">
+                <img src="assets/images/menu-01.jpg" alt="オードブル女亀" />
+              </div>
+              <p class="product-name">
+                オードブル女亀<br class="product-br" /><span>（めんがめ）</span>
+              </p>
+              <p class="product-info">
+                8,640円(税込)<br /><span>（6〜8人前）</span>
+              </p>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <img src="assets/images/menu-02.jpg" alt="オードブル大仙" />
+              </div>
+              <p class="product-name">
+                オードブル大仙<br class="product-br" /><span>（だいせん）</span>
+              </p>
+              <p class="product-info">
+                5,400円(税込)<br /><span>（4〜5人前）</span>
+              </p>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <img src="assets/images/menu-03.jpg" alt="折詰 こぶし" />
+              </div>
+              <p class="product-name">折詰 こぶし</p>
+              <p class="product-info">5,400円(税込)</p>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <img src="assets/images/menu-04.jpg" alt="折詰 うぐいす" />
+              </div>
+              <p class="product-name">折詰 うぐいす</p>
+              <p class="product-info">4,320円(税込)</p>
+            </div>
+          </div>
+          <ul class="product-desc">
+            <li>・各種お弁当：1,080円（税込）〜</li>
+            <li>・パック膳：3,300円（税込）〜</li>
+          </ul>
+
+          <div class="facility__title banquet">
+            <h3>宴会場の貸し出し</h3>
+          </div>
+
+          <p class="facility__title-desc">
+            宴会場の貸し出しも承っております。<br />レストラン２階には、宴会や会議研修室用として３５畳のお部屋が２部屋ございます。７０畳部屋としてもご利用頂けます。ご希望により洋間仕様に変更もできます。ご予算に合わせた宴会パックも承っております。<br />1階のレストランの奥には、テーブルの会議室があります。
+          </p>
+
+          <div class="banquet-inner">
+            <div class="facility-row">
+              <div class="facility-img">
+                <img src="assets/images/room-01.png" alt="1階 会議室" />
+              </div>
+              <div class="facility-text">
+                <h3>1階 会議室</h3>
+                <p>
+                  1階のレストランの奥にはテーブルの会議室があります。檜（ひのき）を使用しており、木の香りが広がります。
+                </p>
+              </div>
+            </div>
+
+            <div class="facility-row">
+              <div class="facility-img">
+                <img src="assets/images/room-02.png" alt="2階 和室" />
+              </div>
+              <div class="facility-text">
+                <h3>2階 和室</h3>
+                <p>
+                  レストラン2階には、宴会や会議研修室用として35畳のお部屋が2部屋あります。70畳部屋としてもご利用頂けます。ご希望により洋間仕様に変更もできます。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reservation-box">
+            <div class="reservation-inner">
+              <p>
+                仕出し・宴会のご利用に際しては、<br
+                  class="reservation-br"
+                />電話にてご予約ください。
+              </p>
+              <div class="reservation-contact">
+                <span class="tel">TEL : 0824-54-2929</span>
+                <span class="staff">担当：升井（マスイ）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__top-image">
+          <img
+            src="assets/images/footer.png"
+            alt="道の駅ゆめランド布野の外観"
+          />
+        </div>
+
+        <div class="footer__content">
+          <div class="footer__inner">
+            <nav class="footer__nav">
+              <ul>
+                <li><a href="#">トップページ</a></li>
+                <li><a href="#">お知らせ</a></li>
+                <li><a href="#">お食事・アイス</a></li>
+                <li><a href="#">市場・お土産</a></li>
+                <li><a href="#">アクセス</a></li>
+                <li><a href="#">周辺観光</a></li>
+                <li><a href="#">会社概要</a></li>
+                <li class="footer__nav-sns">
+                  <a
+                    href="https://www.instagram.com/michinoeki_funo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="footer__bottom">
+              <p class="footer__copyright">
+                COPYRIGHT &copy; 道の駅ゆめランド布野 ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+          <a href="#" class="footer__pagetop">
+            <img src="assets/images/pagetop.png" alt="上へ戻る" />
+          </a>
+        </div>
+      </footer>
+    </main>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
