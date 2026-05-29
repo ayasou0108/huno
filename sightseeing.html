@@ -8,7 +8,7 @@
       name="description"
       content="広島県三次市の道の駅ゆめランド布野は、地元グルメや特産品、自然体験が楽しめる立ち寄りスポット。ドライブや観光の休憩にぴったりな道の駅です。"
     />
-  <!-- ogp / favicon -->
+    <!-- ogp / favicon -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="#" />
     <meta
@@ -20,7 +20,7 @@
       content="地元の新鮮野菜や特産品がそろう道の駅。レストランや体験も楽しめる、ドライブ途中の立ち寄りにおすすめの道の駅です。"
     />
     <meta property="og:site_name" content="道の駅ゆめランド布野" />
-    <meta property="og:image" content="https://#/assets/images/ogp-image.png" />
+    <meta property="og:image" content="https://#/assets/images/ogp-image.webp" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link
@@ -158,19 +158,23 @@
         <li class="mobile__nav-item">
           <a href="sightseeing.html" class="mobile__nav-link">周辺観光</a>
         </li>
+        <li class="mobile__nav-item">
+          <a href="contact.html" class="mobile__nav-link">お問い合わせ</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a
+            href="https://www.instagram.com/michinoeki_funo/"
+            target="_blank"
+            rel="noopener"
+            class="mobile__nav-link mobile_nav__sns"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
       </ul>
 
       <div class="mobile__nav-info">
         <ul>
-          <li class="nav__sns">
-            <a
-              href="https://www.instagram.com/..."
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
           <li class="info__item">
             <div class="info__inner">
               <p class="info__label">営業時間</p>
@@ -208,38 +212,291 @@
     <div class="mobile__overlay" id="mobileOverlay"></div>
 
     <main>
-      <section class="lower-mv">
-        <div class="lower-mv__background">
-          <h2>市場・お土産</h2>
-          <picture>
-            <source
-              srcset="assets/images/mv-2.png"
-              media="(max-width: 768px)"
-            />
-            <img
-              src="assets/images/mv-2.png"
-              alt="施設・サービス詳細"
-              class="lower-mv__bg"
-            />
-          </picture>
-        </div>
+
+
+      <section class="spot-container">
+        <h2 class="spot-section-title">
+          <img
+            src="assets/images/sightseeing-title.png"
+            alt="おすすめ観光スポット"
+          />
+        </h2>
+
+        <article class="spot-item">
+          <div class="spot-image">
+            <img src="assets/images/spot-01.png" alt="八千代滝" />
+          </div>
+          <div class="spot-content">
+            <h3 class="spot-title">八千代滝</h3>
+            <p class="spot-text">
+              八千代滝は、布野の玄関口に位置する自然に囲まれた滝で、静かな環境の中で四季折々の景観を楽しめるスポットです。滝へは林道や山道を歩いて向かいます。<br />自然のクーラーを感じながら、水の音を聞き、木たちに囲まれる。布野の自然を全身で感じてみませんか。
+            </p>
+            <p class="spot-info">
+              <span><strong>住所：</strong>広島県三次市布野町</span>
+              <span><strong>所要時間：</strong>車で約2分</span>
+            </p>
+            <a
+              href="https://maps.app.goo.gl/crFABzYNNzQ5g8279"
+              class="btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Mapで開く
+              <span class="btn-icon"></span>
+            </a>
+          </div>
+        </article>
+
+        <article class="spot-item row-reverse">
+          <div class="spot-image">
+            <img src="assets/images/spot-02.png" alt="フルーツランドふの" />
+          </div>
+          <div class="spot-content">
+            <h3 class="spot-title">フルーツランドふの</h3>
+            <p class="spot-text">
+              季節ごとのフルーツ狩りが楽しめる観光農園です。9月から11月頃にはりんご狩りを体験でき、「ふじ」や「シナノゴールド」など20種類以上のりんごを味わえます。園内では栗拾いや柿狩りも楽しめ、自然の中で家族連れや友人同士でゆったりとした時間を過ごせます。もぎたての新鮮な果実をその場で味わえるのも魅力です。
+            </p>
+            <p class="spot-info">
+              <span><strong>住所：</strong>広島県三次市君田町泉吉田311-3</span>
+              <span><strong>所要時間：</strong>車で約15分</span>
+            </p>
+            <a
+              href="https://maps.app.goo.gl/UJySbrGA74uMo6MB6"
+              class="btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Mapで開く
+              <span class="btn-icon"></span>
+            </a>
+          </div>
+        </article>
+
+        <article class="spot-item">
+          <div class="spot-image">
+            <img src="assets/images/spot-03.png" alt="のば牧場" />
+          </div>
+          <div class="spot-content">
+            <h3 class="spot-title">のば牧場</h3>
+            <p class="spot-text">
+              三次市布野町にある牧場で、自然豊かな環境の中で黒毛和牛「三次ワインビーフ」を育てています。三次ワイナリーのぶどうの搾りかすを活用したオリジナル飼料を与えることで、やわらかく風味豊かな肉質が特徴です。直営店「みーとのば」では、新鮮な精肉や希少部位も販売されており、三次ならではの味覚を楽しめます。
+            </p>
+            <p class="spot-info">
+              <span><strong>住所：</strong>広島県三次市東酒屋町10453-6</span>
+              <span><strong>所要時間：</strong>車で約20分</span>
+            </p>
+            <a
+              href="https://maps.app.goo.gl/j7LpN1yXgrerA9o76"
+              class="btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Mapで開く
+              <span class="btn-icon"></span>
+            </a>
+          </div>
+        </article>
+
+        <article class="spot-item row-reverse">
+          <div class="spot-image">
+            <img src="assets/images/spot-04.png" alt="中村憲吉記念文芸館" />
+          </div>
+          <div class="spot-content">
+            <h3 class="spot-title">中村憲吉記念文芸館</h3>
+            <p class="spot-text">
+              広島県三次市布野町出身の歌人・中村憲吉の生家を改修した文芸館です。館内では、近代短歌の発展に尽力した中村憲吉の生涯や作品、直筆の書簡などを展示しており、当時の趣を残した建物や美しい庭園も楽しめます。落ち着いた雰囲気の中で、文学や歴史に触れられる観光スポットです。
+            </p>
+            <p class="spot-info">
+              <span><strong>住所：</strong>広島県三次市東酒屋町10453-6</span>
+              <span><strong>所要時間：</strong>車で約20分</span>
+            </p>
+            <a
+              href="https://maps.app.goo.gl/UjBxhkJA8TVkWYyP7"
+              class="btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Mapで開く
+              <span class="btn-icon"></span>
+            </a>
+          </div>
+        </article>
       </section>
+      <section class="side-spot-container">
+        <h2 class="side-spot-section-title">
+          <img src="assets/images/sightseeing-side-title.png" alt="その他の周辺情報" />
+        </h2>
 
+        <article class="side-spot-item">
+          <h3 class="side-spot-name">君田温泉 森の泉</h3>
+          <p class="side-spot-desc">
+            中国地方でも珍しい良質な重曹泉が楽しめる天然温泉施設です。
+          </p>
+          <div class="side-spot-meta">
+            <p class="side-spot-address">
+              <strong>住所：</strong>広島県三次市君田町泉吉田311-3
+            </p>
+            <p class="side-spot-time">
+              <strong>所要時間：</strong>車で約15分（約12km）
+            </p>
+          </div>
+          <div class="side-spot-link-wrap">
+            <a
+              href="https://kimitaonsen.com/"
+              class="side-spot-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >公式サイトを見る</a
+            >
+          </div>
+        </article>
 
+        <article class="side-spot-item">
+          <h3 class="side-spot-name">平田観光農園</h3>
+          <p class="side-spot-desc">
+            季節ごとのフルーツ狩りが楽しめる人気の観光農園です。
+          </p>
+          <div class="side-spot-meta">
+            <p class="side-spot-address">
+              <strong>住所：</strong>広島県三次市上田町1740-3
+            </p>
+            <p class="side-spot-time">
+              <strong>所要時間：</strong>車で約30分（約28km）
+            </p>
+          </div>
+          <div class="side-spot-link-wrap">
+            <a
+              href="https://www.marumero.com/"
+              class="side-spot-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >公式サイトを見る</a
+            >
+          </div>
+        </article>
 
+        <article class="side-spot-item">
+          <h3 class="side-spot-name">江の川カヌー公園さくぎ</h3>
+          <p class="side-spot-desc">
+            カヌー体験やキャンプ、コテージ宿泊が楽しめるアウトドア施設です。
+          </p>
+          <div class="side-spot-meta">
+            <p class="side-spot-address">
+              <strong>住所：</strong>広島県三次市作木町香淀116
+            </p>
+            <p class="side-spot-time">
+              <strong>所要時間：</strong>車で約20分（約17km）
+            </p>
+          </div>
+          <div class="side-spot-link-wrap">
+            <a
+              href="https://genkimurasakugi.or.jp/"
+              class="side-spot-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >公式サイトを見る</a
+            >
+          </div>
+        </article>
 
+        <article class="side-spot-item">
+          <h3 class="side-spot-name">
+            三次もののけ<br class="pc-only" />ミュージアム
+          </h3>
+          <p class="side-spot-desc">
+            妖怪文化をテーマに、資料展示や体験で学べる全国でも珍しい博物館。
+          </p>
+          <div class="side-spot-meta">
+            <p class="side-spot-address">
+              <strong>住所：</strong>広島県三次市三次町1691番地4
+            </p>
+            <p class="side-spot-time">
+              <strong>所要時間：</strong>車で約10分（約8km）
+            </p>
+          </div>
+          <div class="side-spot-link-wrap">
+            <a
+              href="https://miyoshi-mononoke.jp/"
+              class="side-spot-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >公式サイトを見る</a
+            >
+          </div>
+        </article>
 
+        <article class="side-spot-item">
+          <h3 class="side-spot-name">尾関山公園</h3>
+          <p class="side-spot-desc">
+            桜や紅葉の名所として知られる、三次市を代表する自然公園。
+          </p>
+          <div class="side-spot-meta">
+            <p class="side-spot-address">
+              <strong>住所：</strong>三次市三次町中所439番地3
+            </p>
+            <p class="side-spot-time">
+              <strong>所要時間：</strong>車で約10分（約8km）
+            </p>
+          </div>
+          <div class="side-spot-link-wrap">
+            <a
+              href="https://maps.app.goo.gl/xrMtnGn11Ufu7TVE6"
+              class="side-spot-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Mapで開く</a
+            >
+          </div>
+        </article>
 
+        <article class="side-spot-item">
+          <h3 class="side-spot-name">常清滝</h3>
+          <p class="side-spot-desc">
+            日本の滝百選にも選ばれている、落差126mを三段に分けて落ちる名瀑。
+          </p>
+          <div class="side-spot-meta">
+            <p class="side-spot-address">
+              <strong>住所：</strong>三次市作木町下作木713（常清滝駐車場）
+            </p>
+            <p class="side-spot-time">
+              <strong>所要時間：</strong>車で約15分（約12km）
+            </p>
+          </div>
+          <div class="side-spot-link-wrap">
+            <a
+              href="https://maps.app.goo.gl/J39XVmfCaTiBBgrf6"
+              class="side-spot-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Mapで開く</a
+            >
+          </div>
+        </article>
 
-      
-<!-- ここに会社概要を追加 -->
-
-
-
-
-
-
-
+        <article class="side-spot-item">
+          <h3 class="side-spot-name">香淀の大イチョウ</h3>
+          <p class="side-spot-desc">
+            樹齢約500年と推定される大樹。ラッパ状の珍しい葉っぱを見つけたらラッキー。
+          </p>
+          <div class="side-spot-meta">
+            <p class="side-spot-address">
+              <strong>住所：</strong>三次市作木町香淀460
+            </p>
+            <p class="side-spot-time">
+              <strong>所要時間：</strong>車で約20分（約20km）
+            </p>
+          </div>
+          <div class="side-spot-link-wrap">
+            <a
+              href="https://maps.app.goo.gl/CFCMnUrNtKYnsT4r7"
+              class="side-spot-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Mapで開く</a
+            >
+          </div>
+        </article>
+      </section>
 
       <footer class="footer">
         <div class="footer__top-image">
@@ -260,6 +517,7 @@
                 <li><a href="index.html#access">アクセス</a></li>
                 <li><a href="sightseeing.html">周辺観光</a></li>
                 <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
                 <li class="footer__nav-sns">
                   <a
                     href="https://www.instagram.com/michinoeki_funo/"
@@ -280,7 +538,11 @@
             </div>
           </div>
           <a href="#" class="footer__pagetop">
-            <img src="assets/images/pagetop.png" alt="上へ戻る" />
+            <img
+              src="assets/images/pagetop.png"
+              alt="上へ戻る"
+              loading="lazy"
+            />
           </a>
         </div>
       </footer>
